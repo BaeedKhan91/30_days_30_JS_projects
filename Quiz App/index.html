@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @layer base{
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+            }
+          .btn{
+            background: white;
+            color: #222;
+            font-weight: 500;
+            width: 100%;
+            border: 1px solid #222;
+            padding: 10px;
+            margin:10px 0px ;
+            text-align: left;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+          }
+          .btn:disabled{
+            cursor: no-drop;
+          }
+          .btn:hover:not([disabled]){
+            background: #222;
+            color: white;
+          }
+          .correct{
+            background-color: #4ade80;
+            color: white;
+        }
+        .in-correct{
+            background-color: #ef4444;
+            color: white;
+          }
+        }
+    </style>
+</head>
+<body class="bg-[#001e4d]">
+    <div class="bg-white w-[90%] max-w-xl mt-24 mx-auto mb-0 rounded-[10px] p-7" >
+        <h1 class="text-4xl font-bold border-b-2 border-s-[#333] pb-5 text-center">Quiz App</h1>
+        <div class="py-5 px-0">
+            <h2 class="text-lg font-semibold text-[#001e4d]  " id="question">Question Goes Here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 1</button>
+            </div>
+            <button id="next-btn" class="bg-[#001e4d] text-white font-medium w-36 border-0 p-2 mt-5 mx-auto mb-0 rounded cursor-pointer hidden" >Next</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
