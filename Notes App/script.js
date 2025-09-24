@@ -1,30 +1,34 @@
 const addBtn = document.getElementById("add-btn");
 let inputSec = document.getElementById("inputs");
 
-addBtn.addEventListener("click", () => {
-  inputSec.innerHTML += `<p contenteditable="true" class="input-box">
 
-                <img src="./images/delete.png" id="d-b" alt="" >
-            </p> `;
- 
-        });
-        
-        inputSec.addEventListener("click",(e)=>{
-            if (e.target.id == "d-b") {
-                
-                e.target.parentElement.remove()
-            }
-            
-        })
-// console.log(inputSec.innerHTML);
+getData();
 
-saveData();
 function saveData() {
   localStorage.setItem("Notes", inputSec.innerHTML);
 }
 
 function getData() {
-  inputSec.innerHTML = localStorage.getItem("Notes");
+  inputSec.innerHTML = localStorage.getItem("Notes") || "";
 }
 
-getData();
+addBtn.addEventListener("click", () => {
+  inputSec.innerHTML += ` <p contenteditable="true" class="input-box">
+      <img src="./images/delete.png" class="delete-btn" alt="">
+    </p>`;
+  saveData();
+});
+
+inputSec.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete-btn")) {
+    e.target.parentElement.remove();
+    saveData();
+  }
+});
+
+inputSec.addEventListener("keyup", (e) => {
+  if (e.target.classList.contains("input-box")) {
+    saveData();
+  }
+});
+
