@@ -7,8 +7,12 @@
 body{
    /* background: #020024; */
     /* background-color: #2431eb; */
-background-color: #001e4d;
+background: linear-gradient(135deg,#500785, #e788e0);
+
+
+
 /* background-color: #1f1f1f; */
+font-family: Arial, Helvetica, sans-serif;
 
 
 
@@ -28,13 +32,14 @@ background-color: #001e4d;
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
-    background-color: rgba(255, 255, 255, 0.336);
+    background-color: rgba(255, 255, 255, 0.381);
     gap: 35px;
     padding: 30px;
     border-radius: 10px;
 }
 
 h1{
+    
     font-family:sans-serif ;
     font-weight: 800;
 }
@@ -74,7 +79,7 @@ h1{
     font-family:sans-serif ;
     border-radius: 7px;
     border: none;
-    background-color: #029bd9;
+    background-color: #dbe42a;
     padding: 7px 10px;
     cursor: pointer;
     font-weight: 600;
@@ -87,8 +92,8 @@ h1{
 ul li{
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
 }
 .div-icon{
     display: flex;
@@ -98,6 +103,7 @@ ul li{
 .div-icon i{
     cursor: pointer;
     transition: 0.2s ease;
+    font-size: 18px;
     /* size: 2px !important; */
 }
 .div-icon i:hover{
