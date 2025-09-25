@@ -126,6 +126,6 @@ nextBtn.addEventListener("click", () => {
 function resetQuestions() {
   answerButtons.innerHTML = "";
 }
-2
+
 startQuiz();
 

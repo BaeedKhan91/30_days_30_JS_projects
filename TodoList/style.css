@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /* background: #020024; */
+    /* background-color: #2431eb; */
+background-color: #001e4d;
+/* background-color: #1f1f1f; */
+
+
+
+
+
+}
+.container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    height: 100vh;
+    margin-top: 5%;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0.336);
+    gap: 35px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    font-family:sans-serif ;
+    font-weight: 800;
+}
+.searchInput{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid red; */
+    gap: 0;
+}
+.search-form {
+    width: 100%;
+    /* border: 2px solid black */
+}
+.search-form input {
+    width: 100%;
+    /* border: 1px solid black !important; */
+    /* opacity: 0.7; */
+    color: black;
+    /* background-color: #ffffff81; */
+    
+}
+.input-btn{
+    display: flex;
+    gap: 5px;
+}
+
+.input-btn input{
+    padding: 7px 15px;
+    border-radius: 7px;
+    border :1px solid #e3e5e6 ;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input-btn button{
+    font-family:sans-serif ;
+    border-radius: 7px;
+    border: none;
+    background-color: #029bd9;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.ul{
+    list-style:  none;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+}
+.div-icon{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+}
+.div-icon i{
+    cursor: pointer;
+    transition: 0.2s ease;
+    /* size: 2px !important; */
+}
+.div-icon i:hover{
+    font-size: 20px;
+}
+
+.ul li.checked{
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+
+.filtered{
+    display: none;
+}
+
+@media (max-width: 385px) {
+    .sub-container{
+        padding: 15px;
+    }
+}
+
+@media (max-width : 320px){
+    .sub-container{
+        padding: 10px;
+    }
+     h1{
+        font-size: 28px;
+        font-weight: 600px;
+     }
+     .input-btn input{
+        padding: 5px 10px;
+        font-size: 12px;
+     }
+     .input-btn button{
+        padding: 5px 8px;
+        font-weight: 600;
+        font-size: 12px;
+     }
+}

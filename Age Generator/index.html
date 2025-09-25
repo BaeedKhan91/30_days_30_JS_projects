@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Generator</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @layer base{
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-[#311bb0] to-[#676fa5]">
+    <div class="flex flex-col h-[65vh] justify-center ml-[12%] gap-12">
+    <h1 class="text-6xl font-semibold text-[#ffffff] line">Simple<br><span class="text-[#dbe42a] mt-12">Age Generator</span></h1>
+    <div class="flex items-center justify-center gap-24  w-[35%] h-[20%] p-5 rounded-md bg-[#ffffff24]">
+        <input type="date" id="input" class="w-60 font-medium text-lg border py-2 px-5 rounded-sm bg-white border-[#d1d5db] text-[#374151]">
+        <button id="gen-btn" class="border-none py-2 px-5 cursor-pointer rounded-md text-[16px] bg-[#dbe42a] text-black hover:text-[#000000]" >Calculate</button>
+    </div>
+    <p class="text-white text-lg" id="p">
+        
+    </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
