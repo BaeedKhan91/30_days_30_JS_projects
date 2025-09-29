@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QrCode Generator</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+        @layer base{
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+     </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-[100vh]  ">
+    
+    <div class=" flex items-center justify-center flex-col gap-5 p-4 w-[20%] bg-white rounded-md shadow-[0_5px_10px_rgba(255,255,255,0.20)]" >
+        <h2 class="text-center font-semibold text-xl">Enter Your Text or URL Here</h2>
+        <input id="input" type="text" placeholder="Enter Text or URL" class="w-full py-3 border pl-2 rounded-md text-[16px]" >
+        <img id="img" src="" alt="">
+        <button id="gen-btn" class="mt-auto w-full bg-[#4c59f5] py-2 rounded-md text-white cursor-pointer">Generate Qr Code</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
