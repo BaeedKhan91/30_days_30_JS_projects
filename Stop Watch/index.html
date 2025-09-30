@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <style>
+        @layer base{
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+           img{
+            cursor: pointer;
+           }
+        }
+      </style>
+</head>
+<body class="flex items-center justify-center h-[100vh] bg-[#a0a3a146]">
+ 
+    <div class=" flex flex-col justify-center items-center bg-[#000000d7] text-white w-[33%] h-[28%] p-5 rounded-lg shadow-2xl shadow-gray-950">
+        <h2  class="text-7xl font-mono tracking-normal" id="displayTime">00:00:00:000</h2>
+        <div class="flex flex-row items-center gap-7 mt-auto">
+            <img src="./images/stop.png" alt="" class="size-14" onclick="stopWatch()">
+            <img src="./images/start.png" alt="" class="size-16" onclick="startWatch()">
+            <img src="./images/reset.png" alt="" class="size-14" onclick="resetWatch()">
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
