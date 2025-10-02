@@ -53,6 +53,7 @@ body {
   font-size: clamp(16px, 4vw, 20px);
   text-align: center;
   color: #1bb193;
+  text-transform: capitalize;
 }
 
 .content {
@@ -63,6 +64,14 @@ body {
   font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 500;
   word-wrap: break-word;
+}
+.content p span{
+  color: #1bb193;
+}
+
+#keyinput{
+  z-index: -999;
+  position: absolute;
 }
 
 .res-btn {
