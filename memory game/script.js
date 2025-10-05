@@ -29,8 +29,20 @@ function startTimer() {
 }
 
 shuffleCards();
+function movesF() {
+  
+  if (moves < 1) {
+      showToast("⏳ moves Over!", "#e74c3c");
+              shuffleCards();
+          resetCard();
+          time = 60;
+          moves = 20;
+          movesElem.textContent = `🎯 Moves: ${moves} left`;
+  }
+}
 
 setTimeout(() => {
+  movesF()
   startTimer();
 }, 2000);
 
@@ -68,7 +80,7 @@ function flipCard(e) {
       setTimeout(() => {
         showToast("🎉 You Found All Cards!", "#27ae60");
         shuffleCards();
-        time = 60;
+        time = 30;
         moves = 20;
         movesElem.textContent = `🎯 Moves: ${moves} left`;
       }, 500);
