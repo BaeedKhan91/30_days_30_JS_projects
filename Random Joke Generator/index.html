@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @layer base {
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .fade {
+          animation: fadein 1.5s ease-in-out;
+        }
+        @keyframes fadein {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body class="flex justify-center items-center h-[100vh] bg-[#ffad23]">
+    <div
+      class="w-[40%] bg-[#121418] rounded-md px-12 py-10 flex justify-center flex-col items-center gap-7"
+    >
+      <img
+        src="./43e3fbd87a88b0789ed027a9666ac6f7-removebg-preview.png"
+        class="w-[170px]"
+        alt=""
+      />
+      <p class="text-center text-white fade" id="joke-cont"></p>
+      <button
+        id="gen-btn"
+        class="py-2 px-4 border-none rounded-md bg-[#ffad23] font-semibold text-[#121418] cursor-pointer"
+      >
+        Get Random Meme
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
