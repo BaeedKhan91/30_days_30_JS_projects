@@ -1,5 +1,5 @@
-const baseURL = "https://www.omdbapi.com/";
-const apiKey = "ce9fc5dd";
+const baseURL = "Base URL";
+const apiKey = "API Key Here";
 
 const userInput = document.getElementById("title-input");
 const form = document.querySelector(".form");
