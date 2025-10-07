@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #aca1ff;
+}
+
+.container {
+  width: 500px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form {
+  display: flex;
+  gap: 15px;
+}
+.form input {
+  width: 70%;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 2px solid #aca1ff;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.724);
+  font-weight: 600;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: transform 1s ease, opacity 0.9s ease;
+}
+
+.result.active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.form button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+  background-color: #aca1ff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form button:hover {
+  background-color: #8676fd;
+}
+.meaning-por {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  align-items: center;
+}
+.meaning-verb p {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.322);
+}
+.speak i {
+  color: #aca1ff;
+  cursor: pointer;
+}
+.detail-mean {
+  color: rgba(0, 0, 0, 0.724);
+  font-weight: 600;
+}
+.sentence {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sentence .line {
+  height: 30px;
+  width: 3px;
+  background-color: #aca1ff;
+}
+.sentence p {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.619);
+  font-weight: 600;
+}
+.err {
+  text-align: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.619);
+}
