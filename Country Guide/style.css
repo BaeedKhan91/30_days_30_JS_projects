@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #3867ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.934);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 5px;
+  padding: 40px;
+}
+.form {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.form input {
+  width: 80%;
+  padding: 10px 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #3867ee;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.631);
+}
+
+.form input.shake {
+  animation: shake 1s ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-8px);
+  }
+  20% {
+    transform: translateX(8px);
+  }
+  30% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  90% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.form input:focus {
+  outline: none;
+  /* border: none; */
+}
+.form input::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+}
+.form button {
+  padding: 12px 25px;
+  border-radius: 20px;
+  background-color: #3867ee;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.poster-por {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.poster-por img {
+  width: 250px;
+}
+.country-detail p {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.country-detail span {
+  color: rgba(0, 0, 0, 0.63);
+  font-size: 16px;
+}
+.err {
+  text-align: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.606);
+  font-size: 18px;
+}
