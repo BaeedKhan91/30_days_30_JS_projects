@@ -31,7 +31,7 @@ const currencies = [
   "NOK",
 ];
 
-const apiKey = "012c012fdd9e020ca8218bbc";
+const apiKey = "API_KEY";
 const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
 
 const input = document.getElementById("input");
