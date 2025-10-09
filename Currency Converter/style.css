@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #997dff;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.container .image-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-div img {
+  width: 70%;
+}
+.container h1 {
+  text-align: center;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.input-div label {
+  /* align-items: center; */
+  text-align: start;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.input-div input {
+  padding: 8px 8px;
+  border: none;
+  border-bottom: 2px solid #997dff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.input-div input.shake{
+    animation: shake 0.5s ease;
+}
+  @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+.input-div input:focus {
+  outline: none;
+}
+.select-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.select-div select {
+  width: 47%;
+  background-color: #997dff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.select-div select:focus {
+  outline: none;
+}
+.con-btn {
+  padding: 10px 0px;
+  background-color: #997dff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+.result-div {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #997dff64;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 17px;
+  align-items: center;
+  border-radius: 5px;
+}
